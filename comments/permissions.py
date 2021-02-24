@@ -8,9 +8,8 @@ class IsAuthorOrAdminOrModerator(permissions.BasePermission):
         if request.method in permissions.SAFE_METHODS:
             return True
         elif request.method == 'POST':
-            return request.user.is_authenticated 
+            return request.user.is_authenticated
         elif request.method in ('PUT', 'PATCH', 'DELETE'):
-            return (request.user.role in {Role.MODERATOR, Role.ADMIN} or 
-                    obj.author == request.user or 
-                    request.user.is_staff)
-      
+            return (request.user.role in {Role.MODERATOR, Role.ADMIN}
+                    or obj.author == request.user
+                    or request.user.is_staff)

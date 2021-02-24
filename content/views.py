@@ -1,6 +1,6 @@
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import filters, mixins, permissions, viewsets
 from django.db.models import Avg
+from rest_framework import filters, mixins, viewsets
 
 from .filters import TitleFilter
 from .models import Category, Genre, Title
