@@ -1,0 +1,7 @@
+id,password,last_login,is_superuser,username,first_name,last_name,is_staff,is_active,date_joined,email,bio,confirmation_code,description,role
+1,pbkdf2_sha256$180000$272lELUPMtUz$jmJtYCgK5B9tYEhFMq1Qsnr7cgn46xvP/GTGuBYPSNk=,,1,admin,,,1,1,2020-11-14 21:57:05.957346,Big_Man@tut.by,,,,user
+100,pbkdf2_sha256$180000$272lELUPMtUz$jmJtYCgK5B9tYEhFMq1Qsnr7cgn46xvP/GTGuBYPSNk=,,0,bingobongo,,,0,1,2020-11-14 21:57:05.957346,bingobongo@yamdb.fake,,,,user
+101,pbkdf2_sha256$180000$272lELUPMtUz$jmJtYCgK5B9tYEhFMq1Qsnr7cgn46xvP/GTGuBYPSNk=,,0,capt_obvious,,,0,1,2020-11-14 21:57:05.957346,capt_obvious@yamdb.fake,,,,admin
+102,pbkdf2_sha256$180000$272lELUPMtUz$jmJtYCgK5B9tYEhFMq1Qsnr7cgn46xvP/GTGuBYPSNk=,,0,faust,,,0,1,2020-11-14 21:57:05.957346,faust@yamdb.fake,,,,user
+103,pbkdf2_sha256$180000$272lELUPMtUz$jmJtYCgK5B9tYEhFMq1Qsnr7cgn46xvP/GTGuBYPSNk=,,0,reviewer,,,0,1,2020-11-14 21:57:05.957346,reviewer@yamdb.fake,,,,user
+104,pbkdf2_sha256$180000$272lELUPMtUz$jmJtYCgK5B9tYEhFMq1Qsnr7cgn46xvP/GTGuBYPSNk=,,0,angry,,,0,1,2020-11-14 21:57:05.957346,angry@yamdb.fake,,,,moderator
