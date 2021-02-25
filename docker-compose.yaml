@@ -17,8 +17,8 @@ services:
     image: jemandem/yamdb_final
     restart: always
     command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
-    ports:
-      - "8000:8000"
+    #ports:
+    #  - "8000:8000"
     volumes:
       - static_volume:/code/static/
       - nginx_conf:/code/conf.d/
