@@ -25,6 +25,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "localhost",
+    "178.154.253.78",
+    "yatube-project.ga",
+    "www.yatube-project.ga"
     "127.0.0.1",
     "[::1]",
     "testserver",
