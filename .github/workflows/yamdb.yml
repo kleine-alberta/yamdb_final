@@ -20,7 +20,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Lint with flake8
-      run: flake8 .
+      run: flake8 api/ api_yamdb/ --exclude api/migrations/,api_yamdb/settings.py
 
   
   build_and_push_to_docker_hub:
@@ -58,8 +58,8 @@ jobs:
           script: |
             pwd
             whoami
-            sudo docker-compose down
-            sudo docker-compose up -d
+            sudo docker stop $(sudo docker ps -a -q)
+            sudo docker-compose up --build -d
   
   send_message:
     runs-on: ubuntu-latest
