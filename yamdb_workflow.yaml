@@ -58,6 +58,7 @@ jobs:
             pwd
             whoami
             sudo docker-compose down
+            sudo docker pull jemandem/yamdb_final:latest
             sudo docker-compose up --build -d jemandem/yamdb_final
   
   send_message:
