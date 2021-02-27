@@ -48,18 +48,18 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: build_and_push_to_docker_hub
     steps:
-    - name: executing remote ssh commands to deploy
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
-        script: |
-          pwd
-          whoami
-          sudo docker-compose down
-          sudo docker-compose up --build -d jemandem/yamdb_final
+      - name: executing remote ssh commands to deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          script: |
+            pwd
+            whoami
+            sudo docker-compose down
+            sudo docker-compose up
   
   send_message:
     runs-on: ubuntu-latest
